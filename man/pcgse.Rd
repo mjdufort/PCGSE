@@ -106,7 +106,7 @@ List with the following elements:
    var1=2 ## variance of first population PC
    var2=1 ## variance of second population PC 
    default.var=.1 ## background variance of population PCs
-   load = .5 ## value of population loading vector for gene set 1 on PC 1 and set 2 on PC 2
+   load = sqrt(.1) ## value of population loading vector for gene set 1 on PC 1 and set 2 on PC 2
    
    ## Creates a first PC with loadings for just the first 20 genes and a 
    ## second PC with loadings for just the second 20 genes 
@@ -115,7 +115,7 @@ List with the following elements:
 
    ## Create the population covariance matrix
    sigma = var1 * loadings1 \%*\% t(loadings1) + var2 * loadings2 \%*\% t(loadings2) + 
-    diag(c(0,0,rep(default.var, p-2)))
+    diag(rep(default.var, p))
 
    ## Simulate MVN  data
    data = mvrnorm(n=n, mu=rep(0, p), Sigma=sigma)  

@@ -1,3 +1,4 @@
-export(pcgse)
+export(pcgse, sgse)
 importFrom(safe)
 importFrom(MASS)
+importFrom(RMTstat)
