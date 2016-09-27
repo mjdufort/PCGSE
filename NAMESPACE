@@ -1,4 +1,7 @@
 export(pcgse, sgse)
-importFrom(safe)
-importFrom(MASS)
-importFrom(RMTstat)
+importFrom(safe, safe)
+importFrom(MASS, mvrnorm)
+importFrom(RMTstat, WishartMaxPar)
+importFrom("methods", "slot")
+importFrom("stats", "cor", "pchisq", "pgamma", "pnorm", "prcomp", "pt",
+           "qnorm", "var", "wilcox.test")

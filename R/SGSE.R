@@ -94,7 +94,7 @@ sgse = function(data, prcomp.output=NA, gene.sets,
   pce = pcgse(data=data, prcomp.output=prcomp.output, pc.indexes=pc.indexes,
       gene.sets=gene.sets, gene.statistic=gene.statistic, transformation=transformation,
       gene.set.statistic=gene.set.statistic, gene.set.test=gene.set.test, nperm=nperm)
-  
+    
   # Compute combined PC enrichment using the weighted Z-method using either the 
   # Tracey-Widom scaled variance of the variance as the weight
   if (pcgse.weight == "variance") {
