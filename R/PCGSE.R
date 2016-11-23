@@ -305,7 +305,7 @@ local.GeneStatistics = function(X.mat, y.vec,...){
 }
 
 global.StandAveDiff = function(C.mat,local.stats,...) { 
-  gene.set.mat = t(as.matrix(C.mat))
+  gene.set.mat = t(SparseM::as.matrix(C.mat))
   return (function(gene.statistics=local.stats,gene.sets=gene.set.mat,...) {  
         num.gene.sets = nrow(gene.set.mat)
         gene.set.statistics = rep(0, num.gene.sets)
