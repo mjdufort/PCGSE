@@ -1,4 +1,4 @@
-export(pcgse, sgse)
+export(pcgse, sgse, local.GeneStatistics, global.StandAveDiff)
 importFrom(safe, safe)
 importFrom(MASS, mvrnorm)
 importFrom(RMTstat, WishartMaxPar)
